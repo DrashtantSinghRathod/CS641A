@@ -26,7 +26,7 @@ qmnjvsa nv wewc flct vprj tj tvvplvl fv xja vqildhc
 	vupq quw x decgqcwt, yq yafl vlqs yqklhq! snafq vml
 	lhvqpawr nqg_vfusr_ec_wawy qp fn wgawdgf.
 
-### Plaintext Space:
+
 
 
 ### Observations used to figure out the cryptosystem
