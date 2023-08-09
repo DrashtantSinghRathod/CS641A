@@ -1,0 +1,80 @@
+import pexpect
+
+editor = pexpect.spawn('ssh student@172.27.26.188')
+editor.expect('student@172.27.26.188\'s password:')
+editor.sendline('cs641')
+editor.expect('Enter your group name: ')
+editor.sendline("crypt_on_ela")
+
+editor.expect('Enter password: ')
+editor.sendline("straightAs")
+
+editor.expect('\r\n\r\n\r\nYou have solved 3 levels so far.\r\nLevel you want to start at: ', timeout=50)
+
+editor.sendline("4")
+editor.expect('.*')
+editor.sendline("back")
+editor.expect('.*')
+editor.sendline("go")
+editor.expect('.*')
+editor.sendline("wave")
+editor.expect('.*')
+editor.sendline("back")
+editor.expect('.*')
+editor.sendline("enter")
+editor.expect('.*')
+editor.sendline("pluck")
+editor.sendline("c")
+editor.sendline("c")
+editor.expect('.*')
+editor.sendline("back")
+editor.expect('.*')
+editor.sendline("back")
+editor.expect('.*')
+editor.sendline("thrnxxtzy")
+editor.expect('.*')
+editor.sendline("read")
+editor.expect('.*')
+editor.sendline("the_magic_of_wand")
+editor.expect('.*')
+editor.sendline("c")
+editor.expect('.*')
+editor.sendline("read")
+
+f = open("plaintexts1.txt", 'r')
+f1= open("ciphertexts1.txt",'w')
+
+
+for line in f.readlines():
+    editor.sendline(line)
+    print(editor.before)
+    f1.writelines(str(editor.before)[48:64]+"\n")
+    editor.expect("Slowly, a new text starts*")
+    editor.sendline("c")
+    editor.expect('The text in the screen vanishes!')
+    
+data = editor.read()
+print(data)
+editor.close()
+print(editor.before,editor.after)
+f.close()
+f1.close()
+
+f = open("plaintexts2.txt", 'r')
+f1= open("ciphertexts2.txt",'w')
+
+
+for line in f.readlines():
+    editor.sendline(line)
+    print(editor.before)
+    f1.writelines(str(editor.before)[48:64]+"\n")
+    editor.expect("Slowly, a new text starts*")
+    editor.sendline("c")
+    editor.expect('The text in the screen vanishes!')
+    
+data = editor.read()
+print(data)
+editor.close()
+print(editor.before,editor.after)
+f.close()
+f1.close()
