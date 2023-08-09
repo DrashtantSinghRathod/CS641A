@@ -28,8 +28,13 @@ After entering "password" , we get our ciphertext which is
 Chosen plain text attack is used to break DES encryption. In this, we used differential cryptanalysis to generate plain text pairs, pass them to the system to get corresponding ciphertext pairs, and then used these to find the key and then used it to decrypt the above ciphertext.
 
 
+<img width="744" alt="Screenshot 2023-08-10 at 03 09 17" src="https://github.com/sudikshanavik/CS641A/assets/100257642/cfa22ee5-93c7-42ba-9f36-ed477f7a53c2">
 
- 
+ <img width="744" alt="Screenshot 2023-08-10 at 03 09 28" src="https://github.com/sudikshanavik/CS641A/assets/100257642/d998d8aa-4163-4108-abb9-c1500f6d3562">
+
+<img width="744" alt="Screenshot 2023-08-10 at 03 09 42" src="https://github.com/sudikshanavik/CS641A/assets/100257642/febedbaa-ce02-4d7c-a869-ed8d7856bac0">
+<img width="744" alt="Screenshot 2023-08-10 at 03 09 57" src="https://github.com/sudikshanavik/CS641A/assets/100257642/653e6f68-d26e-441a-b299-88b1d3113038">
+<img width="744" alt="Screenshot 2023-08-10 at 03 10 11" src="https://github.com/sudikshanavik/CS641A/assets/100257642/9a289b87-4037-4c5f-b53a-9eb4360e05aa">
 
 
 
