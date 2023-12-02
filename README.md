@@ -1,6 +1,5 @@
 # CS641A-Escaping the Caves
-## Members :-
-### Drashtant Singh Rathod, Sudiksha Navik, Rikesh Sharma
+
 ## Level-1
 Simple Monoalphabetic Substitution Cipher.
 ## Level-2
